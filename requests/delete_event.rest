@@ -1,0 +1,1 @@
+DELETE http://localhost:5000/api/events/6109f04e3a20f6445c60ca16

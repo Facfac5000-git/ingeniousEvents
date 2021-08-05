@@ -1,0 +1,7 @@
+POST http://localhost:5000/api/events
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZhY2ZhYzUwMDAiLCJpZCI6IjYxMDcwYzNjMjVlYmFmMzYyNDIwZTJmMCIsImlhdCI6MTYyNzg1MzM1OH0.qJWUFe4UbDjAylvvneu-4EpiQlCyJW8iDiRP_Vo5CXE
+
+{
+    "featured": "true"
+}

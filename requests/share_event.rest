@@ -1,0 +1,1 @@
+GET http://localhost:5000/api/events/6107174d6fbf103f58cd4ad3/share
