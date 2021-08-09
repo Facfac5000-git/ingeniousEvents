@@ -9,11 +9,9 @@ const User = require('../models/user');
 
 //...
 
-jest.setTimeout(100000);
+jest.setTimeout(10000);
 
 test('users are returned as json', async () => {
-
-    jest.setTimeout(100000);
     
     await api
         .get('/api/users')
@@ -75,6 +73,6 @@ describe('when there is initially one user in db', () => {
     });
 })
 
-afterAll(() => {
-    mongoose.connection.close();
+afterAll( async () => {
+    await mongoose.connection.close();
 });

@@ -8,12 +8,9 @@ const bcrypt = require('bcrypt')
 const Event = require('../models/event');
 const User = require('../models/user');
 
-jest.setTimeout(100000);
-
+jest.setTimeout(10000);
 
 test('events are returned as json', async () => {
-
-    jest.setTimeout(100000);
 
     await api
         .get('/api/events')
@@ -92,7 +89,6 @@ describe('viewing a specific event', () => {
   
 describe('addition of a new event', () => {
     beforeEach(async () => {
-        jest.setTimeout(100000000);
     
         await User.deleteMany({});
     
@@ -187,6 +183,6 @@ describe('deletion of a event', () => {
 });
   
 
-afterAll(() => {
-    mongoose.connection.close();
+afterAll( async () => {
+    await mongoose.connection.close();
 });

@@ -3,5 +3,9 @@ Content-Type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZhY2ZhYzUwMDAiLCJpZCI6IjYxMDcwYzNjMjVlYmFmMzYyNDIwZTJmMCIsImlhdCI6MTYyNzg1MzM1OH0.qJWUFe4UbDjAylvvneu-4EpiQlCyJW8iDiRP_Vo5CXE
 
 {
-    "featured": "true"
+    "featured": "true",
+    "title" : "valid title 2",
+    "description": "this is going to be an example event",
+    "image" : "this_is_image_url.jpg",
+    "dates" :  "[{\"date\":\"2021-08-10T14:00:00\", \"price\": 50}]"
 }
