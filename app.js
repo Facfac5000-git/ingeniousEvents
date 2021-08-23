@@ -14,7 +14,7 @@ logger.info('Connecting to', config.MONGODB_URI);
 
 (async function () {
     await mongoose.connect(config.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
-})()
+})();
 
 app.use(cors());
 app.use(express.static('build'));
